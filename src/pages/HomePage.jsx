@@ -2,6 +2,7 @@ const HomePage = () => {
   return (
     <section>
       <div className="container">
+        <div className="layout">
         <header>
           <h1>Общий баланс: 30000 руб.</h1>
         </header>
@@ -28,8 +29,30 @@ const HomePage = () => {
         <div className="items">
             <div className="item">
                 <div className="item__left">
-                    <div className="circle">
+                    <div className="circle expense">
+                        {/* expense */}
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
 
+                    <p className="category">
+                        Категория: продукты
+                    </p>
+                </div>
+                <div className="item__right">
+                    <p className="total">
+                        2500 rub
+                    </p>
+                    <button className="item__btn">
+                        Remove
+                    </button>
+                </div>
+            </div>
+            <div className="item">
+                <div className="item__left">
+                    <div className="circle income">
+                        
+                        {/* income */}
+                        <i class="fa-solid fa-credit-card"></i>
                     </div>
 
                     <p className="category">
@@ -51,6 +74,7 @@ const HomePage = () => {
             <button className="pagination__btn">
                 <span>1</span>
             </button>
+        </div>
         </div>
         </div>
       </div>
